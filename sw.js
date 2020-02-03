@@ -6,11 +6,22 @@ self.addEventListener('push', event => {
         console.log("dddddddddddddddddddddddddddddddcsvsfb")
     }
     console.log('New notification', event)
-    // const options = {
-    //   body: data.body,
-    // }
-    // event.waitUntil(
-    //   self.registration.showNotification(data.title, options)
+    const options = {
+        "title": "Angular News",
+        "body": "Newsletter Available!",
+        // "icon": "assets/main-page-logo-small-hat.png",
+        "vibrate": [100, 50, 100],
+        "data": {
+            "dateOfArrival": Date.now(),
+            "primaryKey": 1
+        },
+        "actions": [{
+            "action": "explore",
+            "title": "Go to the site"
+        }]
+    }
+    event.waitUntil(
+      self.registration.showNotification("Chandru", options)
     
-    //   );
+      );
   })
