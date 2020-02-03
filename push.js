@@ -8,7 +8,7 @@ var vapidKeys = {
 
 push.setVapidDetails('mailto:chandru@vknowlabs.com' , vapidKeys.publicKey , vapidKeys.privateKey);
 
-let sub =  {"endpoint":"https://fcm.googleapis.com/fcm/send/fMFBIWZt_SY:APA91bEv--XM4YaruBMWLOsajdhYSfi9f6cA3FLuMjn4uPc5LckodsCBUj1LKrZBsbsaXqfyakkG02_bQ_Nzv34_F-p49oX4R5_3L6-LBgSCXe4LEnBrde_ABBvxJjTnLICSQRryhA4M","expirationTime":null,"keys":{"p256dh":"BMKdhC-DMDPa64rnSK6uk6WVXtR5eMXt_3V_F7M2l1L7eyrtyc9jzC5h6pxGm6GW3DJV62QX6_6hOVcY3UzIUHw","auth":"9mbx2auSLOIegUsXxefdKQ"}}
+let sub =  {"endpoint":"https://fcm.googleapis.com/fcm/send/d3e_TPmZYQE:APA91bESrtdH6nAE_Ucjpto4SCghXHq9SxqwEVuJRq4hEDnL8Bz-gs_h87GUai87MQRC8M1kXpqLHw5QGs_Pcc00OkfckVp1zyOIbRuyh1rYtPsSeJmYWFMJfWNRcxau-q-ShcwnTvjz","expirationTime":null,"keys":{"p256dh":"BN2tWQzmYmkVNTTzphcRFhhoOZR1EZIhQtLhxxmE_aZ0vk-6_WI8lwe4takJ4YnKdawMYsqQyOAyIXcM4Zhmh_k","auth":"3fmz4OxXpcazV-Yr1SLaAg"}}
 const notificationPayload = JSON.stringify({
     "notification": {
         "title": "Angular News",
