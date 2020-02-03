@@ -25,4 +25,7 @@ const notificationPayload = JSON.stringify({
         }]
     }
 });
-push.sendNotification(sub ,notificationPayload)
+const options = {
+      TTL: 20
+    };
+push.sendNotification(sub ,notificationPayload,options)
