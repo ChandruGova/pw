@@ -2,6 +2,8 @@ self.addEventListener('push', event => {
     // const data = event.data.json()
     if(event && event.data ){
         console.log(event.data,"dddddddddd")
+    }else{
+        console.log("dddddddddddddddddddddddddddddddcsvsfb")
     }
     console.log('New notification', event)
     // const options = {
