@@ -20,6 +20,8 @@ self.addEventListener('push', event => {
             "title": "Go to the site"
         }]
     }
+    console.log('New notification', options)
+
     event.waitUntil(
       self.registration.showNotification("Chandru", options)
     
